@@ -54,8 +54,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         _4wire()
     } else if (wireCount == 5) {
         _5wire()
-    } else if (wireCount == 6) {
-        _6wire()
     }
 })
 function InitSerial () {
@@ -183,9 +181,6 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     cursorPos = cursorPos % wireCount
     UpdateCursor()
 })
-function _6wire () {
-	
-}
 function _3wire () {
     RedCount = 0
     WhiteCount = 1
